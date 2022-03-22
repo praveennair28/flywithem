@@ -1,0 +1,23 @@
+
+   .dds__alert{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 70px;
+    margin-left:70px;
+    background: #ffffc9!important;
+    border: .0625rem solid #eee !important;
+  } 
+
+  i.dds__icons.dds__icon-h4 {
+    font-size: 1.5rem;
+}
+  
+  .dds__alert-info-cir{
+    padding: 0rem 0.625rem;
+    vertical-align: middle;
+    color: #007db8 !important;
+} 
+.dds_txt_align {
+margin-left: 44px;
+padding-bottom: 20px;;
+}

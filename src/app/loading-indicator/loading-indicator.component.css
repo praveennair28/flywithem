@@ -1,0 +1,49 @@
+.icon-ui-loading {
+    height: 21px;
+    width: 21px;
+    /* background: url("./loading-animation-square.gif") no-repeat; */
+    margin-top: -2px;
+    margin-right: 2px;
+  }
+  .icon-ui-loading {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .mg-btm-10 {
+    margin-bottom: 10px;
+  }
+
+  #busy-indicator {
+    text-align: center;
+    background-color: #ffffff;   
+    border: solid 1px #cccccc;
+    padding-top: 25px;
+    z-index: 100000;
+    width: 400px;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;    
+    right: 0;
+    margin: auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+  #busy-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(179, 178, 180, 0.3);    
+    z-index: 90000;
+  }
+   .header-loader {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-60%, -30%);
+   }

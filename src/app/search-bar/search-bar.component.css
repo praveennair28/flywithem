@@ -1,0 +1,12 @@
+.dropdown_search{
+    width:100%;
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.dropdown_select{
+    height: 50px;
+}
+ .title{
+     padding-left:20px;
+ }

@@ -1,0 +1,71 @@
+<!-- <div id="container1" class="box1">
+    <span id="details">
+        <div id="source-dest">
+            <span class="source">{{origin}}</span>
+            <span class="destination">{{destination}}</span>            
+        </div>
+        <div id="dep-arrival">
+            <span class="source">Departed:</span>
+            <span class="destination">Arrived</span>
+        </div>
+        <div id="Time">
+            <span class="source">Time::{{flightData.flightRoute[0].departureTime.actual}}</span>
+            <span class="destination">Time::{{flightData.flightRoute[0].arrivalTime.actual}}</span>
+        </div>
+        <div id="Date">
+            <span class="source">Date::{{flightData.flightRoute[0].departureTime.actual}}</span>
+            <span class="destination">Date::{{flightData.flightRoute[0].arrivalTime.actual}}</span>
+        </div>
+        <div id="scheduled">
+            <span class="source">Scheduled Departure:{{flightData.flightRoute[0].departureTime.schedule}}</span>
+            <span class="destination">Scheduled Arrival:{{flightData.flightRoute[0].arrivalTime.schedule}}</span>
+        </div>
+    </span>
+    
+    <span class="vertical_dotted_line" ></span>
+
+    <span id="status" >
+    </span>
+</div>
+
+
+ -->
+ <div style="width:100%;background-color:whitesmoke;">   
+
+    <div id = "boxes">
+        <h1 style="background-color:whitesmoke;">-</h1>
+          
+        <div id = "leftbox">           
+            <div class="source">{{origin}}</div>
+            <div class="source departed">Departed:</div>
+            <div class="source time">{{originTime}}</div>
+            <div class="source sched_date">{{originDate}}</div>
+            <div class="source sched_date">Scheduled Departure: {{originSchDepTime}}</div>
+        </div> 
+
+        <div id="imgbox">
+            <div >
+                <img src="assets/flight101.png" alt="flight" width="40px" height="40px">
+            </div>           
+        </div>
+        
+        <div id = "middlebox">
+            <div class="source">{{destination}}</div>
+            <div class="source departed">Arrived:</div>
+            <div class="source time">{{arrTime}}</div>
+            <div class="source sched_date">{{arrDate}}</div>
+            <div class="source sched_date">Scheduled Arrival: {{arrSchDepTime}}</div>     
+        </div>
+          
+        <div id = "rightbox">
+            <div style="float:right">
+                <button [class]="statusColor">{{statusText}}</button>
+            </div>
+            <div style="float:center; padding-top:80px;padding-left:50px;font-size: large;">{{flightData.airlineDesignator}} {{flightData.flightNumber}}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

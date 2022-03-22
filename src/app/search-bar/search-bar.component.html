@@ -1,0 +1,9 @@
+<div class="title">{{title}}</div>
+<span class ="dropdown_search">
+    <select (change)="SelectItem($event.target.value)" class ="dropdown_select">
+      <option [value]="defaultInput_code">{{defaultInput_city}} ({{defaultInput_code}})</option>
+      <option *ngFor="let airport of airportList" value="{{airport.iataCode}}">
+        {{airport.shortName}} ({{airport.iataCode}}) 
+      </option>
+    </select>
+</span>
